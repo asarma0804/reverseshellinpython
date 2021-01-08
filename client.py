@@ -3,7 +3,7 @@ import socket
 import subprocess
 
 s = socket.socket()
-host = 'youriphere'#this should be viable to change for where you are unless you have a home pc and its always the same
+host = input("enter local ip: ") # has to be local ip (on the same network) or dies
 port = 9000
 s.connect((host, port))#connects to ur server innit
 

