@@ -11,8 +11,8 @@ as of now my reverse shell can:
 ###### but why?
 > I was bored as fuck yesterday and it took me  2 days to do this so dont judge how bad it is and my shitty spelling i cba to do it properly
 
-pros   |    cons
--------|--------
+pros           |           cons
+---------------|---------------
 it is so cool | it doesnt solve all your problems
 you can operate another pc | i think i have to write for weducational use:(
 
